@@ -14,7 +14,7 @@ function App() {
     <>
       <Todotitle />
       <div>
-        <input
+        <input className="inputting"
           type="text"
           onChange={(event) => {
             console.log(event.target.value);

@@ -4,6 +4,10 @@
   margin: 16px;
 
 }
+.inputting{
+  width: 100px;
+  
+}
 .popup {
   border-radius: 4px;
   background-color: white;
