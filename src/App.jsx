@@ -3,13 +3,12 @@ import Todo from "./components/todo.jsx";
 import Popup from "./components/popup.jsx";
 import Todotitle from "./components/Todotitle.jsx";
 import { useState } from "react";
-import Counter from "./components/Counter.jsx";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
   // const [popupOpen,setPopupOpen] = useState(true)
 
-  return <Counter />;
+  // return <Counter />;
 
   return (
     <>
@@ -21,13 +20,13 @@ function App() {
             console.log(event.target.value);
           }}
         />
-        <button onClick={() => setPopupOpen(true)} Add to do />
+        <button onClick={() => setPopupOpen(true)}>Add to do</button>
       </div>
       <Todo task="Learn react" />
       <Todo task="Finish frontend react" />
       <Todo task="land a junior job " />
       <Todo task="Earn 100k " />
-      {false ? <Popup pop="Are you 10000% sure boy ?" /> : null}
+      {popupOpen ? <Popup pop="Are you 10000% sure boy ?" /> : null}
     </>
   );
 }

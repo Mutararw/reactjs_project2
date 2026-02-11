@@ -6,4 +6,4 @@ function Todotitle() {
   );
 }
 
-export default Todotitle();
+export default Todotitle;

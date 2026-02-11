@@ -3,7 +3,7 @@ function Popup({ pop }) {
     <>
       <div className="Popup">
         <span>{pop}</span>
-        <div className="popup_btns">
+        <div className="popup_btns">fd
           <button
             onClick={() => console.log("confirm button clicked")}
             className="popup_btn"
@@ -18,7 +18,7 @@ function Popup({ pop }) {
           </button>
         </div>
       </div>
-      <div className="backdrop"></div>
+      <div className=""></div>
     </>
   );
 }
