@@ -1,24 +1,24 @@
-function Popup({ pop }) {
+function Popup({ title, closepopup }) {
   return (
     <>
       <div className="Popup">
-        <span>{pop}</span>
-        <div className="popup_btns">fd
+        <span>{title}</span>
+        <div className="popup__btns">
           <button
             onClick={() => console.log("confirm button clicked")}
-            className="popup_btn"
+            className="popup__btn"
           >
             Confirm
           </button>
           <button
-            onClick={() => console.log("cancel button clicked")}
-            className="popup_btn popup_btn--cancel"
+            onClick={() => closepopup()}
+            className="popup__btn popup__btn--cancel"
           >
             Cancel
           </button>
         </div>
       </div>
-      <div className=""></div>
+      <div className="backdrop" onClick={()=> closepopup()}></div>
     </>
   );
 }
