@@ -3,12 +3,13 @@ import Todo from "./components/todo.jsx";
 import Popup from "./components/popup.jsx";
 import Todotitle from "./components/Todotitle.jsx";
 import { useState } from "react";
+import Kounter from "./components/kounter.jsx";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
   // const [popupOpen,setPopupOpen] = useState(true)
 
-  // return <Counter />;
+  return <Kounter />;
 
   return (
     <>
