@@ -19,7 +19,7 @@ function kounter() {
       >
         Decrement
       </button>
-      <button onClick={() => {}}>Reset</button>
+      <button onClick={() => {}}>Reseter</button>
     </div>
   );
 }
