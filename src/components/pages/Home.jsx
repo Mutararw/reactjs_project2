@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import axios from "axios";
+IMPORT 
 function Home() {
   useEffect(() => {
     axios.get("https://jsonpaceholder.typicode.com/users");
